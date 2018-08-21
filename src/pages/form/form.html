@@ -1,0 +1,51 @@
+<!--
+  Generated template for the FormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Form</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="full" padding>
+  
+    <h1>Register Details</h1>
+      
+      <ion-item class="container">
+          <ion-label floating>Name</ion-label>
+          <ion-input type="text" #name></ion-input>
+        </ion-item>
+        
+        <ion-item class="container1">
+          <ion-label floating>Surname</ion-label>
+          <ion-input type="text" #surname></ion-input>
+        </ion-item>
+        
+        <ion-item class="container2">
+          <ion-label floating>StudentNumber</ion-label>
+          <ion-input type="text" #id></ion-input>
+        </ion-item>
+       <br>
+      <br>
+        <button block ion-button color="primary" (click)="ADD(name.value,surname.value,id.value)">ADD</button>
+        <br>
+        
+        <button block ion-button color="primary" (click)="View()">View List</button>
+        <!-- <ion-list>
+          <ion-item *ngFor="let a of xap; let i = index">
+       
+            <h2>Username:{{a.user}}</h2>
+            <h3>Name:{{a.name}} Surname:{{a.surname}}</h3>
+            <p>ID:{{a.id}} Job Title:{{a.role}}</p>
+            <button ion-button clear item-end color="secondary" (click)="View(i)">Update</button>
+          </ion-item>
+        </ion-list> -->
+      
+      
+</ion-content>
